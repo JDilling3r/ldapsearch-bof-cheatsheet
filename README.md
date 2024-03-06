@@ -5,7 +5,7 @@
 
 **Find Users by Name:** ldapsearch "(&(objectClass=user)(name=Smith))" name 0 {DC}
 
-**User's Groups:** ldapsearch "(samAccountName={USERNAME})" "memberOf" 0 {DC}
+**User's Groups:** ldapsearch "(samAccountName={USERNAME})" memberOf 0 {DC}
 
 **Find by Group:** ldapsearch "(memberOf=cn=Domain Admins,cn=Users,dc={DOMAIN},dc={DOMAIN},dc=local)" 0 {DC}
 
@@ -13,7 +13,7 @@
 
 **Organizational Units:** ldapsearch "(objectClass=organizationalUnit)" 0 {DC}
 
-**Computers:** ldapsearch "(objectClass=computer)" "name" 0 {DC}
+**Computers:** ldapsearch "(objectClass=computer)" name 0 {DC}
 
 **Domain Trusts:** ldapsearch "(objectClass=trustedDomain)" flatname,trustdirection,name,distinguishedName 0 {DC}
 
