@@ -13,6 +13,8 @@
 
 **Organizational Units:** ldapsearch "(objectClass=organizationalUnit)" 0 {DC}
 
+**Find by Operating System:** ldapsearch "(&(objectClass=computer)(operatingSystem=Windows 7*))" cn,operatingSystem 0 {DC}
+
 **Computers:** ldapsearch "(objectClass=computer)" name 0 {DC}
 
 **Domain Trusts:** ldapsearch "(objectClass=trustedDomain)" flatname,trustdirection,name,distinguishedName 0 {DC}
