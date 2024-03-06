@@ -1,5 +1,4 @@
-# ldapsearch-bof-cheatsheet
-## TrustedSec Ldapsearch cheatsheet
+# TrustedSec Ldapsearch cheatsheet
 
 
 **User's Info:** ldapsearch "(samAccountName={USERNAME})" 0 {DC}
